@@ -3,7 +3,7 @@
         "target": "es5",
         "module": "commonjs",
         "removeComments": true,
-        "outDir": "dist",
+        "outDir": "./dist",
         "noImplicitAny": true,
         "sourceMap": true,
         "watch": true,
@@ -14,7 +14,8 @@
         "src/**/*"
     ],
     "exclude": [
-        "node_modules",
-        "dist"
+        "./node_modules",
+        "./dist",
+        "./src/app"
     ]
 }

@@ -28,6 +28,7 @@ export class Server {
     mongoose.connect(Config.MONGO_URI || process.env.MONGODB_URI);
 
     // Middleware
+    this.app.use(express.static(__dirname + "./public"));
     this.app.use(bodyParser.urlencoded({ extended: true }));
     this.app.use(bodyParser.json());
     this.app.use(logger("dev"));

@@ -4,9 +4,10 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "server": "tsc && nodemon dist/index.js",
-        "start": "node dist/index.js",
-        "ts:watch": "tsc -w"
+        "server": "tsc && nodemon ./dist/index.js",
+        "start": "node ./dist/index.js",
+        "ts:watch": "tsc -w",
+        "webpack": "webpack --mode development"
     },
     "author": "mavl",
     "license": "MIT",
@@ -20,7 +21,11 @@
         "helmet": "^3.13.0",
         "http": "0.0.0",
         "mongoose": "^5.3.1",
-        "morgan": "^1.9.1"
+        "morgan": "^1.9.1",
+        "vue": "^2.5.17",
+        "vue-class-component": "^6.2.0",
+        "vue-property-decorator": "^7.2.0",
+        "vue-router": "^3.0.1"
     },
     "devDependencies": {
         "@types/body-parser": "^1.17.0",
@@ -33,7 +38,13 @@
         "@types/mongoose": "^5.2.18",
         "@types/morgan": "^1.7.35",
         "@types/node": "^10.11.4",
+        "css-loader": "^1.0.0",
+        "ts-loader": "^5.2.1",
         "tslint": "5.10.0",
-        "typescript": "2.9.1"
+        "typescript": "2.9.1",
+        "vue-loader": "^15.4.2",
+        "vue-template-compiler": "^2.5.17",
+        "webpack": "^4.20.2",
+        "webpack-cli": "^3.1.2"
     }
 }
